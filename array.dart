@@ -28,17 +28,25 @@ void main(List<String> args) {
 
 // day and month
 
-  var list = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+  // var list = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
-  print("enter day");
-  int day = int.parse(stdin.readLineSync()!);
-  print("enter month");
-  int month = int.parse(stdin.readLineSync()!);
-  print(day);
-  print(month);
-  int total = day;
-  for (int i = 0; i < month-1; i++) {
-    total = total + list[i];
-  }
-  print("total day $total");
+  // print("enter day");
+  // int day = int.parse(stdin.readLineSync()!);
+  // print("enter month");
+  // int month = int.parse(stdin.readLineSync()!);
+  // print(day);
+  // print(month);
+  // int total = day;
+  // for (int i = 0; i < month-1; i++) {
+  //   total = total + list[i];
+  // }
+  // print("total day $total");
+
+  // add two array
+  List lst = [2, 3, 5, 8, 9];
+  List ex = [3, 7, 1, 8];
+  lst.addAll(ex);
+  lst.add(4);
+  print(lst);
+  print(ex);
 }

@@ -43,10 +43,44 @@ void main(List<String> args) {
   // print("total day $total");
 
   // add two array
-  List lst = [2, 3, 5, 8, 9];
-  List ex = [3, 7, 1, 8];
-  lst.addAll(ex);
-  lst.add(4);
-  print(lst);
-  print(ex);
+  // List lst = [2, 3, 5, 8, 9];
+  // List ex = [3, 7, 1, 8];
+  // lst.addAll(ex);
+  // lst.add(4);
+  // print(lst);
+  // print(ex);
+
+  // List lst = [
+  //   'ab@gmail.com',
+  //   'lkjdlfj@gmail.com',
+  //   'me@co.uk',
+  //   'john@yahoo.com',
+  //   'info@ali.com'
+  // ];
+  // List domain = ['gmail.com', 'yahoo.com'];
+  // List known = [];
+  // for (int i = 0; i < lst.length; i++) {
+
+  //   for (int j = 0; j < domain.length; j++) {
+  //     if (lst[i].contains(domain[j])) {
+  //       print(lst[i]);
+  //     }
+  //   }
+  // }
+
+  List lst = [
+    'ab@gmail.com',
+    'lkjdlfj@gmail.com',
+    'me@co.uk',
+    'john@yahoo.com',
+    'info@ali.com'
+  ];
+  List domain = ['gmail.com', 'yahoo.com'];
+
+  for (int i = 0; i < lst.length; i++) {
+    bool con = domain.any((e) => lst[i].contains(e));
+    if (!con) {
+      print(lst[i]);
+    }
+  }
 }

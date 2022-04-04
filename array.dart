@@ -68,6 +68,21 @@ void main(List<String> args) {
   //   }
   // }
 
+  // List lst = [
+  //   'ab@gmail.com',
+  //   'lkjdlfj@gmail.com',
+  //   'me@co.uk',
+  //   'john@yahoo.com',
+  //   'info@ali.com'
+  // ];
+  // List domain = ['gmail.com', 'yahoo.com'];
+
+  // for (int i = 0; i < lst.length; i++) {
+  //   bool con = domain.any((e) => lst[i].contains(e));
+  //   if (!con) {
+  //     print(lst[i]);
+  //   }
+  // }
   List lst = [
     'ab@gmail.com',
     'lkjdlfj@gmail.com',
@@ -76,11 +91,13 @@ void main(List<String> args) {
     'info@ali.com'
   ];
   List domain = ['gmail.com', 'yahoo.com'];
-
+  List ch = [];
   for (int i = 0; i < lst.length; i++) {
     bool con = domain.any((e) => lst[i].contains(e));
     if (!con) {
-      print(lst[i]);
+      ch = lst[i].split('@');
+      print(ch[0]);
+      print(ch[1]);
     }
   }
 }

@@ -22,10 +22,24 @@ void main(List<String> args) {
 
   // for (var a in person) {
   //   for (var b in a.entries) {
-      
+
   //     print('${b.key}: ${b.value}');
   //   }
   //   print(' ');
   // }
+  Map<String, int> pizza = {
+    'margherita': 10,
+    'pepperoni': 20,
+    'vegetarian': 40
+  };
+  List<String> order = ['margherita', 'pepperoni'];
+  var sum = 0;
+  for (var item in order) {
+    
+    var a = pizza[item];
+    
+    sum = sum + a!;
   
+  }
+    print(sum);
 }

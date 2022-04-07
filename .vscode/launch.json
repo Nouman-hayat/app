@@ -8,7 +8,7 @@
       "name": "Dart & Flutter",
       "request": "launch",
       "type": "dart",
-      "program": "C:/Users/ns22/Desktop/app/calu.dart",
+      "program": "C:/Users/ns22/Desktop/app/atm.dart",
       "console": "terminal"
     }
   ]

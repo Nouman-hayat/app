@@ -271,28 +271,107 @@ import 'dart:io';
 //   }
 // }
 
+// void main(List<String> args) {
+//   print('enter  number');
+//   int num1 = input();
+//   bool b = nature(num1);
+//   if (b) {
+//     print('pass');
+//   } else {
+//     print('fail');
+//   }
+// }
+
+// int input() {
+//   String? bstr = stdin.readLineSync();
+//   int b = int.parse(bstr!);
+//   return b;
+// }
+
+// bool nature(int a) {
+//   if (a>40) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// void main(List<String> args) {
+//   print('1.convert ascii value to character');
+//   print('2. convert character value to  ascii');
+//   int num1 = input();
+//   switch (num1) {
+//     case 1:
+//       {
+//         print('enter ascii value');
+//         int b = int.parse(stdin.readLineSync()!);
+//         print('${tochar(b)}');
+//         break;
+//       }
+//     case 2:
+//       {
+//         print('enter character');
+//         String? bstr = stdin.readLineSync();
+//         print('${toascii(bstr!)}');
+//         break;
+//       }
+//   }
+// }
+
+// int input() {
+//   String? bstr = stdin.readLineSync();
+//   int b = int.parse(bstr!);
+//   return b;
+// }
+
+// String tochar(int a) {
+//   return String.fromCharCode(a);
+// }
+
+// int toascii(String a) {
+//   return a.codeUnitAt(0);
+// }
+
+// void main(List<String> args) {
+//   print('1.standard adult membership');
+//   print('2.child membership ');
+//   print('3.senior membership ');
+//   print('2.exit');
+//   int num1 = input();
+//   switch (num1) {
+//     case 1:
+//       {
+
+//       }
+//     case 2:
+//       {
+//         print('enter character');
+//         String? bstr = stdin.readLineSync();
+//         print('${toascii(bstr!)}');
+//         break;
+//       }
+//   }
+// }
+
+// int input() {
+//   String? bstr = stdin.readLineSync();
+//   int b = int.parse(bstr!);
+//   return b;
+// }
+
+// String tochar(int a) {
+//   return String.fromCharCode(a);
+// }
+
+// int toascii(String a) {
+//   return a.codeUnitAt(0);
+// }
+
 void main(List<String> args) {
-  print('enter  number');
-  int num1 = input();
-  bool b = nature(num1);
-  if (b) {
-    print('number is divisible');
-  } else {
-    print('not divisible');
-  }
+  String name = 'nouman';
+  print(sayhello('nouman'));
 }
 
-int input() {
-  String? bstr = stdin.readLineSync();
-  int b = int.parse(bstr!);
-  return b;
-}
-
-bool nature(int a) {
-  if (a % 3 == 0) {
-    return true;
-  } else {
-    return false;
-  }
-}
-
+var sayhello = (String name) {
+  return 'say $name';
+};

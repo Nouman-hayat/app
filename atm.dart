@@ -246,11 +246,40 @@ import 'dart:io';
 //   return b * b * b;
 // }
 
+// void main(List<String> args) {
+//   print('enter  number');
+//   int num1 = input();
+//   bool b = nature(num1);
+//   if (b) {
+//     print('number is divisible');
+//   } else {
+//     print('not divisible');
+//   }
+// }
+
+// int input() {
+//   String? bstr = stdin.readLineSync();
+//   int b = int.parse(bstr!);
+//   return b;
+// }
+
+// bool nature(int a) {
+//   if (a % 3 == 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
 void main(List<String> args) {
-  print('enter two number');
+  print('enter  number');
   int num1 = input();
-  int num2 = input();
-  int res = gcd(num1, num2);
+  bool b = nature(num1);
+  if (b) {
+    print('number is divisible');
+  } else {
+    print('not divisible');
+  }
 }
 
 int input() {
@@ -259,10 +288,11 @@ int input() {
   return b;
 }
 
-int gcd(int num1, int num2) {
-  int res = 0;
-  for (int i = 0; i <= num1; i++) {
-    if()
+bool nature(int a) {
+  if (a % 3 == 0) {
+    return true;
+  } else {
+    return false;
   }
-  return res;
 }
+

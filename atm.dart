@@ -377,8 +377,9 @@ import 'dart:io';
 // };
 
 typedef Hi = double Function(double , double);
+
 void main(List<String> args) {
-  display((double a, double b) => a+b);
+  display((double a, double b) => a+b );
 }
 
 void display(Hi a) {

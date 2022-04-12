@@ -367,11 +367,20 @@ import 'dart:io';
 //   return a.codeUnitAt(0);
 // }
 
+// void main(List<String> args) {
+//   String name = 'nouman';
+//   print(sayhello('nouman'));
+// }
+
+// var sayhello = (String name) {
+//   return 'say $name';
+// };
+
+typedef Hi = double Function(double , double);
 void main(List<String> args) {
-  String name = 'nouman';
-  print(sayhello('nouman'));
+  display((double a, double b) => a+b);
 }
 
-var sayhello = (String name) {
-  return 'say $name';
-};
+void display(Hi a) {
+  print('addition of ${a(7.0, 9.0)}');
+}

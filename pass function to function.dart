@@ -1,15 +1,19 @@
 import 'dart:io';
 
+import 'atm.dart';
 
 void main(List<String> args) {
   display(add);
-    
+  display(sub);
 }
 
-int add(int a, int b) {
+int sub(int a, int b) {
   return a + b;
 }
 
+int add(int a, int b) {
+  return a - b;
+}
 
 int input() {
   stdout.write('Enter number  :');
@@ -23,4 +27,3 @@ void display(final abc) {
   int c = abc(a, b);
   print(c);
 }
-

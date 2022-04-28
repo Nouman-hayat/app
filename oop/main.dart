@@ -1,5 +1,9 @@
 
+
 import 'Recipe.dart';
+import 'dummy_recipes.dart';
+
+import 'selectedRecipe.dart';
 
 // Question 1
 // void main(List<String> args) {
@@ -110,56 +114,54 @@ import 'Recipe.dart';
 //   player.change(name: 'abc', average: 34, team: 'pak');
 //   player.display();
 // }
+// void main(List<String> args) {
+// Recipe recipe1 = Recipe(
+//     id: 454,
+//     title: 'abc',
+//     imgurl: '/imgurl',
+//     duration: 50,
+//     ingredients: ['water'],
+//     steps: ['boil water'],
+//     isglutenfree: true,
+//     isvagen: true,
+//     nonsectarian: false,
+//     islactosefree: false);
+
+// Recipe recipe2 = Recipe(
+//     id: 454,
+//     title: '2mnd',
+//     imgurl: '/imgurl2',
+//     duration: 70,
+//     ingredients: ['water2'],
+//     steps: ['boil water2'],
+//     isglutenfree: false,
+//     isvagen: true,
+//     nonsectarian: false,
+//     islactosefree: false);
+// Recipe recipe3 = Recipe(
+//     id: 454,
+//     title: '3mnd',
+//     imgurl: '/imgurl3',
+//     duration: 10,
+//     ingredients: ['water3'],
+//     steps: ['boil water3'],
+//     isglutenfree: false,
+//     isvagen: true,
+//     nonsectarian: false,
+//     islactosefree: false);
+
+//  List<Recipe> lst= dummy_recipes.where((element) => element.duration>50).toList();
+// List<Recipe> lst= dummy_recipes.where((element) => element.isVegan==true).toList();
+// List<Recipe> lst= dummy_recipes.where((element) => element.steps.length<=6).toList();
+// List<Recipe> Lst= dummy_recipes.where((element) => element.title.startsWith('C')).toList();
+
+// final Lst= dummy_recipes.map((e) => SelectedRecipe(id: e.id, title: e.title, duration: e.duration)).where((element) => element.duration>20 );
+// final Lst= dummy_recipes.where((element) =>element.duration >20 ).toList().map((element) => SelectedRecipe(id: element.id, title: element.title , duration: element.duration));
+//   print(Lst);
+// }
+
 void main(List<String> args) {
-  List<Recipe> allrecipe = [];
-  Recipe recipe1 = Recipe(
-      id: 454,
-      title: 'abc',
-      imgurl: '/imgurl',
-      ingredients: ['water'],
-      steps: ['boil water'],
-      isglutenfree: true,
-      isvagen: true,
-      nonvegatarian: false,
-      islactosefree: false);
-
-  Recipe recipe2 = Recipe(
-      id: 454,
-      title: '2mnd',
-      imgurl: '/imgurl2',
-      ingredients: ['water2'],
-      steps: ['boil water2'],
-      isglutenfree: false,
-      isvagen: true,
-      nonvegatarian: false,
-      islactosefree: false);
-  Recipe recipe3 = Recipe(
-      id: 454,
-      title: '3mnd',
-      imgurl: '/imgurl3',
-      ingredients: ['water3'],
-      steps: ['boil water3'],
-      isglutenfree: false,
-      isvagen: true,
-      nonvegatarian: false,
-      islactosefree: false);
-
-  
-
-  allrecipe.add(recipe1);
-  allrecipe.add(recipe2);
-  allrecipe.add(recipe3);
-  
-  for (int i = 0; i < allrecipe.length; i++) {
-    print('Details ');
-    print(allrecipe[0].id);
-    print(allrecipe[0].title);
-    print(allrecipe[0].imgurl);
-    print(allrecipe[0].ingredients);
-    print(allrecipe[0].isglutenfree);
-    print(allrecipe[0].nonvegatarian);
-    print(allrecipe[0].islactosefree);
-
-    print(' Recipe info end');
-  }
+  // final lst = dummy_Recipe.map((e) => Recipe.selected( e.id , e.title , e.duration));
+   final lst = dummy_Recipe.map((e) => Recipe.selected( e.id , e.title , e.duration));
+  print(lst);
 }

@@ -1,5 +1,3 @@
-
-
 import 'Recipe.dart';
 import 'dummy_recipes.dart';
 
@@ -161,7 +159,7 @@ import 'selectedRecipe.dart';
 // }
 
 void main(List<String> args) {
-  // final lst = dummy_Recipe.map((e) => Recipe.selected( e.id , e.title , e.duration));
-   final lst = dummy_Recipe.map((e) => Recipe.selected( e.id , e.title , e.duration));
+
+  final lst = dummy_Recipe.map(((e) => Recipe.selected(e.id, e.title, e.duration)));
   print(lst);
 }

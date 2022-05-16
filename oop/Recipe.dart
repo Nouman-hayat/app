@@ -32,6 +32,6 @@ class Recipe {
   @override
   String toString() {
     // TODO: implement toString
-    return ' Recipe{ id :$id  \n title: $title   \n duration : $duration \n \n\n\n} ';
+    return ' Recipe{ id :$id  \n title: $title   \n duration : $duration \n \n} \n\n';
   }
 }

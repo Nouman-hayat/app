@@ -2,37 +2,38 @@ import 'numbers.dart';
 import 'dart:io';
 
 void main(List<String> args) {
-  List lst = [];
   int choice = 0;
   Tel tel = Tel();
-  showmenu();
-  choice = userchice();
-  switch (choice) {
-    case 1:
-      {
-        print(lst);
-        break;
-      }
-    case 2:
-      {
-        print("enter number for search");
-        String find = stdin.readLineSync()!;
-        print(lst.where((element) => element.number == find));
 
-        break;
-      }
-    case 3:
-      {
-        tel.addnumber();
-        lst.add(tel);
-        break;
-      }
+  do {
+    
 
-    default:
-      {
-        print("invalid choice");
-      }
-  }
+    showmenu();
+    choice = userchice();
+    switch (choice) {
+      case 1:
+        {
+          //print(lst);
+          break;
+        }
+      case 2:
+        {
+          tel.find();
+          break;
+        }
+      case 3:
+        {
+          tel.addnumber();
+          
+          break;
+        }
+
+      default:
+        {
+          print("invalid choice");
+        }
+    }
+  } while (choice != 6);
 }
 
 void showmenu() {
